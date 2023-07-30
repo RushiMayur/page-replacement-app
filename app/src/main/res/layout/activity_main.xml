@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/we"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Least Recently Used Algorithm"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="20dp"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textColor="#ff0000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etGet"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:hint="Enter"
+        android:layout_marginTop="70dp"
+        android:inputType="number"
+        android:layout_marginStart="30dp"
+        android:maxLength="3"/>
+    <Button
+        android:id="@+id/btnSend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/etGet"
+        android:layout_marginTop="70dp"
+        android:layout_marginLeft="50dp"
+        android:backgroundTint="#00ff00"
+        android:text="Send"/>
+    <Button
+        android:id="@+id/btnFin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="440dp"
+        android:layout_marginLeft="20dp"
+
+        android:text="Finalise"/>
+    <TextView
+        android:id="@+id/fin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:layout_marginStart="13dp"
+        android:textStyle="bold"
+        android:layout_marginTop="445dp"
+        android:layout_toRightOf="@id/btnFin"
+        android:text=""/>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="170dp"
+        android:weightSum="4"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/s1"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="-"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textColor = "?android:textColorPrimary"
+            android:textSize="20sp"/>
+        <TextView
+            android:id="@+id/s2"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="-"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:textColor = "?android:textColorPrimary"
+            android:textSize="20sp"/>
+        <TextView
+            android:id="@+id/s3"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:text="-"
+            android:layout_marginTop="20dp"
+            android:textColor = "?android:textColorPrimary"
+            android:gravity="center"
+            android:textSize="20sp"/>
+        <TextView
+            android:id="@+id/s4"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:text="-"
+            android:textColor = "?android:textColorPrimary"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:textSize="20sp"/>
+
+
+
+
+
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#0aa000"
+        android:layout_marginTop="150dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#0aa000"
+        android:layout_marginTop="420dp"/>
+
+    <TextView
+        android:id="@+id/info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="350dp"
+        android:textSize="20sp"
+        android:textColor = "?android:textColorPrimary"
+        android:gravity="center"
+        android:text=""/>
+
+
+    <Button
+        android:id="@+id/btnClear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="600dp"
+
+
+        android:text="Clear"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btnNext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+
+        android:layout_marginHorizontal="40dp"
+        app:fabCustomSize="40dp"
+
+        android:layout_marginTop="600dp"
+
+        android:backgroundTint="#ffa500"
+        android:src="@drawable/baseline_arrow_forward_24" />
+
+</RelativeLayout>
